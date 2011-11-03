@@ -1,3 +1,9 @@
+# revision 17275
+# category Package
+# catalog-ctan /macros/latex/contrib/ftcap
+# catalog-date 2010-03-09 13:05:51 +0100
+# catalog-license gpl
+# catalog-version 1.4
 Name:		texlive-ftcap
 Version:	1.4
 Release:	1
@@ -41,6 +47,7 @@ environment.
 %{_texmfdistdir}/tex/latex/ftcap/ftcap.sty
 %doc %{_texmfdistdir}/doc/latex/ftcap/ftcap.pdf
 %doc %{_texmfdistdir}/doc/latex/ftcap/ftcap.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,3 +58,5 @@ environment.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
