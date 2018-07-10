@@ -6,7 +6,7 @@
 # catalog-version 1.4
 Name:		texlive-ftcap
 Version:	1.4
-Release:	10
+Release:	11
 Summary:	Allows \caption at the beginning of a table-environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ftcap
